@@ -60,7 +60,8 @@ def area_circulo():
     return print(f'A area do circulo é igual a: {area_arredondada}m².\n O perimetro do circulo é igual a: {perimetro_arredondado}m².')
 
 print(area_circulo())
-## 6 
+## 6
+## 7
 def numero_primo():
     numero = int(input('Digite um numero: '))
     while True:
