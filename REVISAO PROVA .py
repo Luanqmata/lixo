@@ -22,6 +22,15 @@ def multiplo_cinco_tres():
 
 print(multiplo_cinco_tres())
 ## 3 
+
+def analisador_palavra():
+    string = input('Digite a palavra.')
+    if string == string[::-1]:
+        print('Essa palavra ele é palindromo.')
+    else: 
+        print('Essa palavra nao é palindroma.')
+analisador_palavra()
+
 ## 4 
 import time
 def lista_frutas():
