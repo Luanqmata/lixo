@@ -13,12 +13,9 @@ def multiplo_cinco_tres():
     numero_user = int(input('Digite um numero.'))
     time.sleep(1)
     
-    if numero_user % 5 ==0:
-        print('\nMultiplo de 5.\n')
+    if numero_user % 5 ==0 and numero_user % 3 ==0:
+        print('\nMultiplo de 5 e de 3 .\n')
         return True 
-    elif numero_user % 3 ==0:
-        print('\nMultiplo de 3.\n')
-        return True
     else:
         print('\neste numero nao é divisivel por 3 e nem por 5.\n')
         return False
