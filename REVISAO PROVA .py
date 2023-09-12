@@ -60,6 +60,27 @@ def area_circulo():
     return print(f'A area do circulo é igual a: {area_arredondada}m².\n O perimetro do circulo é igual a: {perimetro_arredondado}m².')
 
 print(area_circulo())
+## 6 
+def numero_primo():
+    numero = int(input('Digite um numero: '))
+    while True:
+        if numero % 2 == 0:
+            print('\no numero é divisivel por 2 portanto.')
+            print('o numero nao é primo.')
+            break
+        if numero % 3 ==0:
+            print('\no numero é divisivel por 3 portanto.')
+            print('o numero nao é primo.')
+            break
+        if numero % 5 ==0:
+            print('\no numero é divisivel por 5 portanto.')
+            print('o numero nao é primo.')
+            break
+        else:
+            print('o numero é primo.')
+        
+numero_primo()
+
 ## 9
 import random
 import time
