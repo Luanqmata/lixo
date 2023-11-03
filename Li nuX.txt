@@ -1,0 +1,63 @@
+apropos
+man para chamar o terminal de determinado programa , mostra todas as funcoes daquele comando , ex: MAN ls , man mkdir
+mkdir Criar diretorios , pasta etc 
+                                                                                                                                                          site que explica comandos : ​explainshell (foda dms)
+Comandos.
+          clear pra limpar  
+          apropos
+          man = manual 
+          ls mostra os documentos 
+          ls -l em forma de lista 
+          ls -h
+          ls -lh
+          if config (MANUAL)
+
+GREP = https://tecnoblog.net/responde/grep-tutorial-linux-codigo/
+
+      grep if condif 10. 
+        | =  buscar em varios arquivos , e mandar para outro lugar 
+
+    TOUCH arquivo{1,2,3} criar arquivos 
+    touch documento{1..20}.txt
+
+    pdw imprime onde vc esta
+
+    cat documento | grep luan / busca dentro da pasta o nome luan e imprime  
+    cd entra em diretorios 
+    cd .. volta diretorio 
+    cd ~ (volta pro home)
+    cd - (volta pro diretorio q vc estava antes )
+    ex: cd desktop/documentos/luan 
+  
+_________________
+nano , editor de arquivo , editar arquivo , editar codigos 
+
+    find = busca qualquer coisa   (man find ) mostra o manual
+    wc = conta linhas 
+    wc -l mostra em lista 
+    cp = copiar 
+          cp documentos nome_pasta_nova
+    mv move ariquivo pra outro destino , e renomeia arquivo 
+____________________________
+      comandos.  
+
+apropos
+man
+cat
+ls
+ls -l
+ls -h
+ls -lh
+grep
+touch
+nano
+cd
+cd ..
+cd -
+cd ~
+<TAB>
+find ./ -name "docu*"
+wc
+
+ssh  para entrar em servidores 
+________________________________
