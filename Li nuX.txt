@@ -61,3 +61,27 @@ wc
 
 ssh  para entrar em servidores 
 ________________________________
+
+sudo su 'entrar como super user'
+type 'mostra o tipo do comando'
+cler "limpar"
+echo " buscar e mostra oq tem dentro da variavel "
+pwd "se localizar"
+./ " tem q esta dentro do diretorio , voce consegue executar oq esta dentro do script"
+$ "sem o sifrão ele imprime na tela , com o cifão ele mostra o caminhoi"
+$path "elee procura em cada diretorio onde o programa esta e vai separando.'
+exit 'quando vc usa 2 bash e vc sai de um e vai para o outro'
+export 'exportar uma variavel , mostrar ela em global'
+cat ' para ver dentro do editor'
+cd .. 'voltar diretorio'
+todo arquivo oculto tem um ponto antes .nome do arquivo
+ls -a "lista os arq ocultos"
+mkdir 'cria pastas'
+echo $SHELL 'mostra a bin / bash'
+history 'comamando q mostra o historico de navegação'
+nano 'para modificar arq'
+CRIA UAM VAR = COISA.
+como mandar de um bash pro  outro = 'export NOME_VARIAVEL' 
+como apagar o historico 'hystory -c'
+
+quando o script ta verde é porque vc tem permissao pra executar , quando ta branco nao tem permissão 
