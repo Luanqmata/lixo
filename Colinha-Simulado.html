@@ -1,0 +1,212 @@
+<script>
+
+                        //   INTALAR O NODE.JS EXTENÇÃO DE CONSOLE NO SUBLIME
+
+    // 1°passo baiaxar o node .zip instalar em aquivos de programas com nome de nodejs
+
+    // 2° criar umanova build 
+
+    // 3° substituir o make por isso
+
+    //{
+    //    "cmd": ["C:\\Program Files\\nodejs\\node.exe","$file"],//abrir comand e executar arquivo e envio argumento arquivo
+       
+    //    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",//capturando possiveis erros do js e informando a liha
+       
+    //   "selector": "source.js",//avisando que será usado pra arquivos javascript
+    //}
+
+    // 4° salve essa build dentro \Sublime Text 3\Packages\User , com o seguinte nome JavaScript.sublime-Build 
+
+    // 5° apertar ctrl+b pra rodar 
+
+        //----------------------------------------------------------------------------------------------------------------------
+            ///               DICAS: 
+                // ACESSAR PRIMEIRO ITEM NUMA ARAY = variavel = NOME_ARRAY[0] , print variavel
+                // 2° ex:  ACESSAR O ULTIMO  ultimo = frutas[frutas.length - 1]; PRINT ultimo
+                // variavel.pop() = remove o ultimo indice da lista 
+                // variavel.shift() = remove do incio da array (fazer igual 2° ex)
+                
+                // COMANDO PARA PESQUISAR ALGO DENTRO DA ARRAY; var posição = nome_array.indexOf('nome da coisa q procura.');
+                
+                //UNIR DUAS ARRAYS; var array1 = [ 1, 2 ] ; var array2 = [ 3,4 ] ; var array3 = array1.concat(array2); ; print(array3)
+
+        //__________________________________________________________________________________________________________________________
+
+    function remoção_adicionando_somando (){
+        const lista_fruta = ["banana" , 'maça' , 'pera' , 'laranja' , 'manga']
+
+        let novo_array = lista_fruta.slice(0, -1);             //remove o ultimo indice e pra remover o primeiro lista_frutra.slice(1) ;
+        document.write(novo_array);                     // Saída: ["banana", "maça", "pera", "laranja"]
+
+        //let novo_array = lista_fruta.splice(1,3);             //remove indices de 1,3 da lista 
+        //console.log(lista_fruta)
+
+        //let novo_array = lista_fruta.push(4,3);           // adicionar o 4,3 na lista no final com push
+        //console.log(lista_fruta)
+    
+        // let novo_array = lista_fruta.unshift(4+3);              // adicionou o numero somado 4+3 no começo do array com unshift
+        // console.log(lista_fruta)
+    }
+    // remoção_adicionando_somando ();
+
+    // ___________________________________________________________________________________________________________________
+
+    const array = [ 5,4,3,2,1,-1,-2,-3,-6];
+    const array2 = [1,2,3,4,6,-2,-3,-6]
+    const array_positiva = [ 1,2,3,4,5,6,7,8 ]
+
+
+    function percorre_dados_array(array){
+                //crio a lista aser analisada
+
+        var numeros_menores_que_3 = 0;      // crio uma variavel de contagem 
+
+        for(var i = 0; i < array.length ; i++){             //faço o laço de repetiçao para analisar os dados da array 
+            //document.write(array[i]);             // tiro a prova pra ver se esta dando certo 
+            if(array[i] < 3 ){                              // crio a condição de todos os numeros menores q 3 serao printados 
+                document.write(array[i])
+                numeros_menores_que_3 += 1;                  //depois adiciono usando += a contagem superior
+            }   
+        }
+        //document.write('existem esses numeros menores que ' + numeros_menores_que_3)
+    }
+    //percorre_dados_array(array);
+    
+    function adicionando_final_começo(lista) {
+
+       // lista.push(1,2);            //adiciona ao final 
+      //  document.write(lista);
+
+     // lista.unshift(9,8);           //adiciona no começo
+     // document.write(lista);
+
+     lista.splice(1,2,'a');              //remove os indices 1,2 e adiciona o A no lugar deles
+     document.write(lista);
+
+    }
+    //adicionando_final_começo(array);
+    
+    function identificar_maior_numero_naArray( lista ){
+        var primeira_pos = lista[0]         //defino a var com a primeira pos da lista 
+
+        for(var i = 0; i< lista.length; i++){       //percorro os dados 
+            //document.write(lista[i])                      //tirando a prova qesta dando tudo certo ate agora 
+            if (lista[i] > primeira_pos ){          //crio a condição para todos os numeros que forem maios do q o primeiro 
+                primeira_pos = lista[i]             //substituir a primeira pos para a condição criada (' numero maior que o primeiro numero da lista ')
+            }
+        }
+        document.write(primeira_pos)
+    }
+    //identificar_maior_numero_naArray(array);
+
+    function identifica_menor_que_0 ( lista ){
+        for(var i = 0; i < lista.length; i++){      //percorro os dados 
+            if (lista[i] > 0 ){                                  //crio a condição todos os indices percorridos forem MAIORES q 0 
+                document.write(lista[i])                    //printo os indices condicionados
+            }
+            
+            //if (lista[i] < 0){
+            //    document.write(lista[i]);      //IMPRIMINDO TODOS MENORES QUE 0 
+            //}
+
+        }
+    }
+    //identifica_menor_que_0 ( array);
+
+    function identifica_pares( lista ){
+        for(var i = 0; i < lista.length; i++){              //percorro os dados 
+            if(lista[i] % 2 == 0 ){                         // crio a condição que se os numeros da lista forem divisiveis por 2 com resto 0 
+                document.write(lista[i] + ',')              //imprimo todos os pares 
+            }
+        }
+    }
+    //identifica_pares(array);
+
+    function Armazena_valor_e_soma(lista) {
+        var soma = 0;
+    
+        for (var i = 0; i < lista.length; i++) {
+            if (lista[i] % 2 !== 0) { // Verifica se o número é ímpar
+                soma += lista[i];
+            }
+        }
+        document.write(soma);
+    }
+    //Armazena_valor_e_soma(array);
+
+    function Igualdade_entre_DUAS_arrays (lista1 , lista2){
+        for(var l1 = 0;l1 < lista1.length ; l1++){      //percorro dado 1° lits 
+            for(var l2 =0; l2< lista2.length; l2++){    //percorro dado 2° lista 
+                if(lista1[l1] == lista2[l2]){                   // crio a condição se o dado percorrido da lista 1 foi ifgual a dado percorrido da lista 2 
+                    document.write(lista2[l2] + ',')          //printo a igualdade deles
+                }
+            }
+        }
+    }
+    //Igualdade_entre_DUAS_arrays(array,array2)
+
+    function calcula_MEDIA_array ( lista ){
+        soma = 0;
+
+        for(var i = 0; i < lista.length; i++){
+            soma += lista[i];                       //armazeno  o resutlado final na soma
+        }                                       
+        //document.write(soma);
+        calcula_MEDIA = soma / lista.length;        //divido o resultado da soma , pelo numero de posicoes da array 
+        document.write('A media dessa array é :' + calcula_MEDIA);
+    }
+    //calcula_MEDIA_array(array_positiva);
+
+    function verifica_igualdade_dentro_lista(lista) {
+        var numeros_repetidos = {};
+    
+        for (var i = 0; i < lista.length; i++) {
+            if (numeros_repetidos[lista[i]] === undefined) {
+                numeros_repetidos[lista[i]] = 1;
+            } else {
+                numeros_repetidos[lista[i]]++;
+            }
+        }
+    
+        for (var numero in numeros_repetidos) {
+            if (numeros_repetidos[numero] > 1) {
+                document.write('O número ' + numero + ' se repete ' + numeros_repetidos[numero] + ' vezes na lista.<br>');
+            }
+        }
+    }
+    
+    var array3 = [0, 11, 22, 33, 44, 55, 44, 55];
+    verifica_igualdade_dentro_lista(array3);
+
+        // USANDO ARGUMENTS COISA DE LOUCO MSM 
+
+        function calcularNotaFinal() {
+            var totalNotas = 0;
+        
+            for (var i = 0; i < arguments.length; i++) {
+                totalNotas += arguments[i];
+            }
+        
+            var mediaBimestres = totalNotas / arguments.length;
+        
+            if (arguments.length === 4) {
+                return mediaBimestres; // Não há prova final
+            } else if (arguments.length === 5) {
+                // O quinto argumento é a nota da avaliação final
+                var notaFinal = arguments[4];
+                var notaFinalPonderada = 0.6 * mediaBimestres + 0.4 * notaFinal;
+                return notaFinalPonderada;
+            } else {
+                return "Número inválido de argumentos";
+            }
+        }
+        
+        // Exemplo de uso:
+        var notaFinalSemProvaFinal = calcularNotaFinal(7.5, 8.2, 6.8, 9.0);
+        console.log("Nota final sem prova final: " + notaFinalSemProvaFinal);
+        
+        var notaFinalComProvaFinal = calcularNotaFinal(7.5, 8.2, 6.8, 9.0, 7.0);
+        console.log("Nota final com prova final: " + notaFinalComProvaFinal);
+
+</script>
