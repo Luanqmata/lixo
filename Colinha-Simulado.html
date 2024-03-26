@@ -281,4 +281,59 @@
         var notaFinalComProvaFinal = calcularNotaFinal(7.5, 8.2, 6.8, 9.0, 7.0);
         console.log("Nota final com prova final: " + notaFinalComProvaFinal);
 
+  
+        //_________________________________________________ EXTRAS ___________________________________________________
+              var lista = [0,2,4,43,416,765,8657]
+          
+          function verifica_maior(lista) {										
+          	const primeira_pos = lista[0]									
+          	const maiores = []												
+          	for(let i = 0; i < lista.length;i++){						
+          		if (lista[i] > primeira_pos) {						
+          			maiores.push(lista[i])								
+          		}
+          	}
+          	return maiores
+          }
+          
+          //console.log(verifica_maior(lista));
+          
+          function maior_unico(lista) {
+          	let primeiro = lista[0]
+          
+          	for(let i = 0; i < lista.length ; i++){
+          		if (lista[i] > primeiro) {
+          			primeiro = lista[i]
+          		}
+          	}
+          	return primeiro
+          }
+          
+          //console.log(maior_unico(lista));
+          
+          function menor_unico(lista){
+          	let ultima_pos = lista[6]
+          
+          	for(let i = 0; i< lista.length;i++){
+          		if (lista[i] < ultima_pos) {
+          			ultima_pos = lista[i]
+          		}
+          	}
+          	return ultima_pos
+          }
+          
+          //console.log(menor_unico(lista));
+          
+          function media_lista(lista){
+          	soma = 0
+          
+          	for(let i =0;i <lista.length;i++){
+          		soma += lista[i]
+          	}
+          	media = soma / lista.length
+          	return Math.round(media)
+          }
+          
+          console.log(media_lista(lista));
+      
 </script>
