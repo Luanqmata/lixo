@@ -335,5 +335,19 @@
           }
           
           console.log(media_lista(lista));
+
+  // ________________________________________________________________________________________
+
+  function fibonacci(numeroDeElementos) {
+    var fib = [0, 1];
+    for (var i = 2; i < numeroDeElementos; i++) {
+        fib.push(fib[i - 1] + fib[i - 2]);
+    }
+    return fib.slice(0, numeroDeElementos);
+}
+
+var numeroDeElementos = parseInt(prompt("Digite o número de elementos da sequência Fibonacci: "));
+console.log(fibonacci(numeroDeElementos));
+
       
 </script>
