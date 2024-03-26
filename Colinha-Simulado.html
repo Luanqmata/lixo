@@ -49,14 +49,86 @@
         // console.log(lista_fruta)
     }
     // remoção_adicionando_somando ();
+    // ___________________________________________________USANDO SORT_____________________________________________________________
+                                                       
+                                                          //var lista1 = [4,3,8,5,1];
+                                                        var lista2 = [10,1,5,9,8,12,15];
+                                                    
+                                                        //lista1.sort();
+                                                        //lista2.sort();
+                                                        //console.log(lista1);
+                                                        //console.log(lista2);
+                                                            
+                                                        /*function comparanumero(a,b){
+                                                            	if (a == b){
+                                                            		return 0
+                                                            	}
+                                                            	else if(a < b){
+                                                            		return -1
+                                                            	}
+                                                            	else{
+                                                            		return 1
+                                                            	}
+                                                            }
+                                                            
+                                                         lista2.sort(comparanumero)
+                                                         console.log(lista)
+                                                            */
+                                                            
+                                                          lista2.sort((a,b)=> a-b)
+                                                          console.log(lista2)
+
+    
 
     // ___________________________________________________________________________________________________________________
 
     const array = [ 5,4,3,2,1,-1,-2,-3,-6];
     const array2 = [1,2,3,4,6,-2,-3,-6]
     const array_positiva = [ 1,2,3,4,5,6,7,8 ]
+    
+    // ___________________________________________________________________________________________________________________
+      // 1° metodo
+    const lista = [8,3]
+    function troca(lista, pos1, pos2){
+        let aux = lista[pos1];
+        console.log(lista[pos1] , lista[pos2]);
+        lista[pos1] = lista[pos2];
+        console.log(lista[pos1] , lista[pos2])
+        lista[pos2] = aux
+        console.log(lista[pos1],lista[pos2])
+      }
 
+    troca(lista, 0, 1);
+    console.log('lista final é: ' + lista);
 
+  // 2°metodo
+    lista =[8,3]
+
+    function inversao_de_valores(numeros){
+        let resposta = [ ];
+         for(let i = 0; i < numeros.length; i++){
+            resposta.unshift(numeros[i]);
+     }
+     console.log(resposta);
+    }
+    inversao_de_valores(lista);
+
+  //_______________________________________________USANDO O METODO AZAR___________________________________________________
+
+              var lista = [8,3]
+              function troca(lista,pos1,pos2){
+              	[lista[pos1],lista[pos2]]=[lista[pos2],lista[pos1]]
+              	return lista
+              }
+              troca(lista,0,1);
+              console.log(lista);
+              
+              
+              //lista.sort()
+              //console.log('lista final:( "' +lista +'" ).');
+  // _____________________________________________________________________________________________________________
+
+  
     function percorre_dados_array(array){
                 //crio a lista aser analisada
 
