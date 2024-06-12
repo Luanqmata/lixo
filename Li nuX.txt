@@ -156,3 +156,26 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-fre
 deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
 
 deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware
+__________________________________________AULA 15________________________________________________
+GUI = interface grafica
+TERMINAIS=  xterm = temrinal mais simples preto e branco , terminal XFCE = terminal que tem ediçoes ,mudar fontes, aumentar fontes, colorido
+acessar telas de loguin diferentes = comandos de navegação de menu de loguin (crtl + alt + f1 ~ f6)
+			
+				BASH
+bash -l OU bash - -loguin = invoca um shell de loguin
+bash interativo = bash -i
+bash - -noprofile = ignora o arq de inicialização 
+bash - -norc = 
+bash - -rcfile = 
+
+descobrir o tipo/nome de shel da maquina = echo $0
+
+decobrir quantos shels nos temos grep | 
+
+-----------------------------------------------
+		comandos da aula
+mkdir aula15
+touch ola_mundo.sh
+nano ola_mundo.sh == escrever 'olha mundo' e salvar . #!/bin/bash == comando para 
+dar permissao pra exercutar o script == chmod +x (nome do arquivo) 'TODOS'
+
