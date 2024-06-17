@@ -179,3 +179,54 @@ touch ola_mundo.sh
 nano ola_mundo.sh == escrever 'olha mundo' e salvar . #!/bin/bash == comando para 
 dar permissao pra exercutar o script == chmod +x (nome do arquivo) 'TODOS'
 
+revisão So Weverson
+
+Encontrar arquivos de SUID:
+sudo find /usr/bin -perm -4000  simbolico --> sudo find /usr/bin -perm -u+s
+
+Econtrar arquivos de SGID:
+sudo find /usr/bin -perm -2000 
+------------------------------------------------
+comando:	passwd -S (status)
+		professor P 2024-02-26 0 99999 7 -1
+
+professor = user
+P=(existe uma senha) , NP (sem senha), L (senha bloqueada)
+
+2024-02-26 = ultima alteração da senha
+
+0 = numero minimo de dias de mudanças de senha 
+
+9999 = tempo que vc escolhe para deixar aquela senha ativa
+
+7 = o aviso , o numero de dias antes da senha expirar
+
+BLOQUEAR SENHA DO USUARIO = sudo usermod professor --lock , depois passwd -S (mostra bloqueado)
+
+Desbloquear senha do user = sudo usermod professor --unlock ,depois passwd -S (mostra bloqueado)
+---------------------------------------------------
+Descobrir portas abertas:
+
+nmap localhost:
+
+_________________
+permissao pra arquivo: são separados por 3 gp : user , grupos , outros
+  --- = 000 = 0
+
+/ rwx = 111 = 7 / 
+/ rw- = 110 = 6 /
+/ r-x = 101 = 5 /
+/ r-- = 100 = 4 /
+/ -wx = 011 = 3 /
+/ -w- = 010 = 2 /
+/ --x = 001 = 1 /
+
+dar permissoes a gps especificos: 
+
+users: chmod u+r nome_arquivo --> 400 
+grup: chmod g+r nome_arquivo --> 040
+outros: chmod o+rwx nome_arq --> 004
+todos : chmod ugo+rwx nome_arq  --> chmod 777 nome_Arq
+
+da permissao de x : chmod +x nomedoarq --> chmod 111 nome arq 
+tirar permissao de x : chmod -x nomedoarq --> chmod 000	nome arq
