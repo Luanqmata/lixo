@@ -64,7 +64,42 @@ ALTER COLUMN email DROP NOT NULL;
 ALTER TABLE nome_da_tabela
 ALTER COLUMN nome_da_coluna SET NOT NULL;
 --------------FK----------------
+adicionando chave primaria:
+CREATE TABLE nome_da_tabela (
+    id SERIAL PRIMARY KEY,  (talvez n precise do serial)
+    nome VARCHAR(100)
+);
 
+ADICIONANDO CHAVE ESTRANGEIRA (3° RELAÇÃO DO BD VARIOS PARA VARIOS):
+-- Criação da tabela de clientes
+CREATE TABLE clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
 
+-- Criação da tabela de produtos
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco NUMERIC(10, 2) NOT NULL
+);
+
+-- Criação da tabela de pedidos
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    cliente_id INTEGER NOT NULL,
+    data_pedido DATE NOT NULL,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);
+
+-- Criação da tabela de itens_pedido para o relacionamento muitos-para-muitos
+CREATE TABLE itens_pedido (
+    pedido_id INTEGER NOT NULL,
+    produto_id INTEGER NOT NULL,
+    quantidade INTEGER NOT NULL,
+    PRIMARY KEY (pedido_id, produto_id),
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
+);
 
 }
