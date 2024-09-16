@@ -63,6 +63,10 @@ ALTER COLUMN email DROP NOT NULL;
 8. ADICIONANDO NOT NULL EM UMA COLUNDA DA TABELA = 
 ALTER TABLE nome_da_tabela
 ALTER COLUMN nome_da_coluna SET NOT NULL;
+
+
+
+
 --------------FK----------------
 adicionando chave primaria:
 CREATE TABLE nome_da_tabela (
