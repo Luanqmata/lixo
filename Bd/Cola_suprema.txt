@@ -1,0 +1,70 @@
+Colinha monstra SQL
+
+alter table { 
+
+coisas que pode fazer : 
+
+1. mudar um tipo de dado da coluna = 
+{   ALTER TABLE nome_da_tabela
+    ALTER COLUMN nome_da_coluna TYPE novo_tipo_de_dado;
+OU
+ALTER TABLE nome_da_tabela
+MODIFY COLUMN nome_da_coluna novo_tipo_de_dado; 
+		numerico
+ALTER TABLE nome_da_tabela
+MODIFY COLUMN nome_da_coluna NUMERIC(20);
+OU
+ALTER TABLE nome_da_tabela
+ALTER COLUMN nome_da_coluna TYPE NUMERIC(20);
+
+}
+
+{   ALTER TABLE nome_da_tabela
+    ALTER COLUMN email TYPE TEXT;
+OU
+ALTER TABLE nome_da_tabela
+MODIFY COLUMN email VARCHAR(100); }
+2. mudando nome da tabela=
+ALTER TABLE atletas
+RENAME TO atletas2024;
+
+3. deletar uma coluna = 
+ALTER TABLE nome_da_tabela
+DROP COLUMN email;
+
+4. criar uma coluna = 
+ALTER TABLE nome_da_tabela
+ADD COLUMN email VARCHAR(50);
+
+
+5. renomear uma coluna = 
+ALTER TABLE nome_da_tabela
+RENAME COLUMN nome_atual_para nome_novo;
+OU
+ALTER TABLE nome_da_tabela
+RENAME COLUMN email TO contato_email;
+
+6. adicionar restrição =
+ALTER TABLE nome_da_tabela
+ALTER COLUMN email SET NOT NULL;
+para~~
+ALTER TABLE nome_da_tabela
+ADD CONSTRAINT unique_email UNIQUE (email);
+
+7. remover uma restrição =
+remover uma constraint unica:
+ALTER TABLE nome_da_tabela
+DROP CONSTRAINT unique_email;  (mais usado)
+
+remover um notnull = 
+ALTER TABLE nome_da_tabela
+ALTER COLUMN email DROP NOT NULL;
+
+8. ADICIONANDO NOT NULL EM UMA COLUNDA DA TABELA = 
+ALTER TABLE nome_da_tabela
+ALTER COLUMN nome_da_coluna SET NOT NULL;
+--------------FK----------------
+
+
+
+}
