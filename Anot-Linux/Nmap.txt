@@ -1,35 +1,51 @@
 Para detectar qual sistema operacional o alvo está executando, você usaria o parâmetro -O no nmap.
 -O
+
 What is the first switch listed in the help menu for a 'Syn Scan' (more on this later!)?
 -sS
+
 Which switch would you use for a "UDP scan"?
 -sU
+
 O parâmetro do nmap para detectar a versão dos serviços em execução no alvo é 
 -sV
+
 The default output provided by nmap often does not provide enough information for a pentester. How would you increase the verbosity?
 -v (-vvv)
+
 What switch would you use to save the nmap results in three major formats?
 -oA
+
 What switch would you use to save the nmap results in a "normal" format?
 -oN
+
 A very useful output format: how would you save results in a "grepable" format?
 -oG
+
 Ativar modo agressivo 
 -A
+
 How would you set the timing template to level 5?
 -T5
+
 How would you tell nmap to only scan port 80?
 -p 80
+
 How would you tell nmap to scan all ports?
 -p-
+
 How would you activate a script from the nmap scripting library (lots more on this later!)?
 --script
+
 How would you activate all of the scripts in the "vuln" category?
 --script=vuln
+
 If a port is closed, which flag should the server send back to indicate this?
 RST (porta fechada)
+
 O Nmap pode usar uma varredura SYN sem permissões Sudo (S/N)?
 N
+
 -------------------
 safe:- Won't affect the target
 intrusive:- Not safe: likely to affect the target
