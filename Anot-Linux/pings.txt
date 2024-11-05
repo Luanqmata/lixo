@@ -1,0 +1,8 @@
+[Question 7.1] Which TCP ping scan does not require a privileged account?
+
+Answer: TCP SYN Ping
+
+[Question 7.2] Which TCP ping scan requires a privileged account?
+
+Answer: TCP ACK Ping
+
