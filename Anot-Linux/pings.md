@@ -6,3 +6,4 @@ Answer: TCP SYN Ping
 
 Answer: TCP ACK Ping
 
+![image](https://github.com/user-attachments/assets/856b1e89-3ec8-440b-9c4a-8ddd7fd3c72a)
