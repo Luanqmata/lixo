@@ -49,7 +49,7 @@ As classes formam a quantidade de linhas da tabela.
 \[ h = 23/6 ~= 3,8 ~~= 4 \]
 
 ---
-
+![image](https://github.com/user-attachments/assets/716937ea-d9ae-475e-a850-15077d7a2ca7)
 ## Passo 5: Tabela Inicial com Classes e Frequência Absoluta \( n \)
 
 | \( i \) | Classes     | \( n \) |
@@ -136,7 +136,7 @@ As classes formam a quantidade de linhas da tabela.
 
 Este documento resume os passos para construir uma tabela de distribuição de frequências com \( n \), \( N_i \), \( f_i \), \( F_i \) e \( x^1 \), fornecendo uma visão clara e ordenada dos dados.
 
-# ANOTEÇÕES BRUTAS
+# ANOTAÇÕES BRUTAS
   ```txt 
   #titulo Distribuição de Frequências
 
