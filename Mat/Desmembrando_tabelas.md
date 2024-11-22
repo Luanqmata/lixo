@@ -82,9 +82,9 @@ As classes formam a quantidade de linhas da tabela.
 ## Passo 7: Frequência Relativa (\( f_i \))
 
 **Fórmula:**  
-\[ f_i = \frac{n}{\Sigma n} \]  
+\[ f_i = n / SUM(n) \]  
 **Exemplo:** Para \( n = 4 \):  
-\[ f_i = \frac{4}{40} = 0,1 \]
+\[ ( 4/40= 10/100 = 0,1 ) \]
 
 | \( i \) | Classes     | \( n \) | \( N_i \) | \( f_i \) |
 |---------|-------------|---------|-----------|-----------|
@@ -116,9 +116,11 @@ As classes formam a quantidade de linhas da tabela.
 ## Passo 9: Ponto Médio (\( x^1 \))
 
 **Fórmula:**  
-\[ x^1 = \frac{\text{Limite Inferior} + \text{Limite Superior}}{2} \]  
+\[ x^1 = Limite Inferior + Limite Superio / 2 \]  
 **Exemplo:** Para \( 150 - 154 \):  
-\[ x^1 = \frac{150 + 154}{2} = 152 \]
+\[ x^1 = 150 + 154 = 304 ; 304 / 2 = 152 \]
+**OU:**
+\[ ( 150 +  h = 154 ) \]
 
 | \( i \) | Classes     | \( n \) | \( N_i \) | \( f_i \) | \( F_i \) | \( x^1 \) |
 |---------|-------------|---------|-----------|-----------|-----------|-----------|
