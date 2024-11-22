@@ -180,7 +180,7 @@ _____________________
 | 4 | 162|-166 |  8  |
 | 5 | 166|-170 |  5  |
 | 6 | 170|-174 |  3  |
-               |  40 | = SUM  somatorio da frequencia absoluta ( professor pode perguntar!! )
+                 |  40 | = SUM  somatorio da frequencia absoluta ( professor pode perguntar!! )
 
  " Ni "  = frequencia absoluta acumulada  ( vai ser o numero de "n" { frequencia absoluta } + a soma dos anteriores da coluna de "n")
 ____________________________
@@ -191,7 +191,7 @@ ____________________________
 | 4 | 162|-166 |  8  |  32 | ( 8 + 11 + 9 + 4 = 32 )
 | 5 | 166|-170 |  5  |  37 | ( 5 + 8 + 11 + 9 + 4 = 37 )
 | 6 | 170|-174 |  3  |  40 | ( 3 + 5 + 8 + 11 + 9 + 4 = 40 )
-               |  40 | 
+                 |  40 | 
 
  " fi "  = frequencia relativa ( porcetagem ou parte decimal que isso representa da total 40 pesquisas )
 Oque fazer = pegar o indece que esta na coluna " n " e dividir pelo total do somatorio de " n " (frequencia absoluta ) { n / SUM(n) }  
@@ -203,7 +203,7 @@ ____________________________________
 | 4 | 162|-166 |  8  |  32 |  0,2  |  ( 8/40 )
 | 5 | 166|-170 |  5  |  37 | 0,125 |  ( 5/40 )
 | 6 | 170|-174 |  3  |  40 | 0,075 |  ( 3/40 )
-               |  40 |     |SUM = 1|  A soma tem q ser igual a 1 ( na decimal tende ser igual a 1 e na porcentagem tem q dar 100 )
+                 |  40 |     |SUM = 1|  A soma tem q ser igual a 1 ( na decimal tende ser igual a 1 e na porcentagem tem q dar 100 )
 
  " Fi " Freqncia relativa acumulada ( a mesma coisa da frequencia acumulada )
 ____________________________________________
@@ -214,7 +214,7 @@ ____________________________________________
 | 4 | 162|-166 |  8  |  32 |  0,2  |  0,8  |  ( 0,2 + 0,275 + 0,225 + 0,1 = 0,8 )
 | 5 | 166|-170 |  5  |  37 | 0,125 | 0,925 |  ( 0,125 + 0,2 + 0,275 + 0,225 + 0,1 = 0,925 )
 | 6 | 170|-174 |  3  |  40 | 0,075 |   1   |  ( 0,075 + 0,125 + 0,2 + 0,275 + 0,225 + 0,1 = 1 )
-               |  40 |     |SUM = 1|
+                 |  40 |     |SUM = 1|
 
 
  " x¹ "  Ponto medio ( envolve tirar a media das classes, somar e dividir por 2 { ou a quantidade de numeros que aparecerem na classe relativo a media } )
@@ -226,5 +226,5 @@ ____________________________________________________
 | 4 | 162|-166 |  8  |  32 |  0,2  |  0,8  |  164  |  ( 160 +  h = 164 )
 | 5 | 166|-170 |  5  |  37 | 0,125 | 0,925 |  168  |  ( 164 +  h = 168 )
 | 6 | 170|-174 |  3  |  40 | 0,075 |   1   |  172  |  ( 168 +  h = 172 )
-               |  40 |     |SUM = 1|
+                 |  40 |     |SUM = 1|
   ```
