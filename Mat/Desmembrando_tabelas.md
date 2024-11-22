@@ -64,7 +64,7 @@ As classes formam a quantidade de linhas da tabela.
 
 ---
 
-## Passo 6: Frequência Absoluta Acumulada (\ N_i \)
+## Passo 6: Frequência Absoluta Acumulada ( N_i )
 
 **Definição:** Soma acumulada dos valores de \( n \).  
 
@@ -79,7 +79,7 @@ As classes formam a quantidade de linhas da tabela.
 
 ---
 
-## Passo 7: Frequência Relativa (\( f_i \))
+## Passo 7: Frequência Relativa ( f_i )
 
 **Fórmula:**  
 \[ f_i = n / SUM(n) \]  
@@ -98,7 +98,7 @@ As classes formam a quantidade de linhas da tabela.
 
 ---
 
-## Passo 8: Frequência Relativa Acumulada (\( F_i \))
+## Passo 8: Frequência Relativa Acumulada \( F_i \)
 
 **Definição:** Soma acumulada dos valores de \( f_i \).
 
@@ -113,14 +113,14 @@ As classes formam a quantidade de linhas da tabela.
 
 ---
 
-## Passo 9: Ponto Médio (\( x^1 \))
+## Passo 9: Ponto Médio \( x^1 \)
 
 **Fórmula:**  
 \[ x^1 = Limite Inferior + Limite Superio / 2 \]  
 **Exemplo:** Para \( 150 - 154 \):  
 \[ x^1 = 150 + 154 = 304 ; 304 / 2 = 152 \]
-**OU:** Para \( 150 - 154 \):  
-\[ ( 150 +  h = 154 ) \]
+**OU:**:  
+\[ 150 +  h = 154 \]
 
 | \( i \) | Classes     | \( n \) | \( N_i \) | \( f_i \) | \( F_i \) | \( x^1 \) |
 |---------|-------------|---------|-----------|-----------|-----------|-----------|
