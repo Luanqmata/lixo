@@ -84,7 +84,7 @@ As classes formam a quantidade de linhas da tabela.
 **Fórmula:**  
 \[ f_i = n / SUM(n) \]  
 **Exemplo:** Para \( n = 4 \):  
-\[ ( 4/40= 10/100 = 0,1 ) \]
+\[ 4/40= 10/100 = 0,1 \]
 
 | \( i \) | Classes     | \( n \) | \( N_i \) | \( f_i \) |
 |---------|-------------|---------|-----------|-----------|
@@ -119,7 +119,7 @@ As classes formam a quantidade de linhas da tabela.
 \[ x^1 = Limite Inferior + Limite Superio / 2 \]  
 **Exemplo:** Para \( 150 - 154 \):  
 \[ x^1 = 150 + 154 = 304 ; 304 / 2 = 152 \]
-**OU:**
+**OU:** Para \( 150 - 154 \):  
 \[ ( 150 +  h = 154 ) \]
 
 | \( i \) | Classes     | \( n \) | \( N_i \) | \( f_i \) | \( F_i \) | \( x^1 \) |
