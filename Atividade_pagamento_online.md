@@ -1,7 +1,7 @@
 # Atividade Sistemas Distribuidos              6°Sem - Faculdade Iesgo
 
-# Professor: Rogério B. Andrade
-# Alunos: Thiago Oliveira Pereira | Luan Brito Sousa Calazans .
+- Professor: Rogério B. Andrade
+- Alunos: Thiago Oliveira Pereira | Luan Brito Sousa Calazans .
 
 ---
 
