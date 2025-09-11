@@ -1,3 +1,10 @@
+Atividade Sistemas Distribuidos              6°Sem - Faculdade Iesgo
+
+Professor: Rogério B. Andrade
+Alunos: Thiago Oliveira Pereira | Luan Brito Sousa Calazans .
+
+---
+
 # Sistema de Pagamento Online – README
 
 ## Parte A – Respostas Simples
@@ -8,7 +15,7 @@
 - **Falha 2:** O pagamento acontece, mas a resposta não volta para o frontend. O cliente pode tentar pagar de novo e acabar sendo cobrado duas vezes.  
 - **Falha 3:** O servidor de pagamentos processa corretamente a transação, mas ocorre um timeout no banco de dados antes de registrar a operação. Isso pode deixar o sistema em estado inconsistente (o cliente foi cobrado, mas não há registro da transação).
 
----
+--- 
 
 ### Solução para evitar duplicação
 
