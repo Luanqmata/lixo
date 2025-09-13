@@ -31,7 +31,7 @@
 - “No máximo uma vez” pode falhar, porque se a mensagem se perder o pagamento nem acontece.  
 - A melhor opção é **idempotência**, porque permite reenviar a operação sem perigo de cobrar duas vezes.  
 
-### **Discussão estilo estudantes de faculdade (6º semestre):**  
+### Discursão
 > A semântica mais adequada para uma operação crítica é a **idempotência**.  
 > Isso porque, em sistemas distribuídos, pode acontecer de a mensagem ser enviada mais de uma vez (por falha de rede, reenvio automático, etc.).  
 > Se usarmos "no máximo uma vez", corremos o risco de perder a operação (caso a mensagem falhe, ela nunca mais será executada).  
