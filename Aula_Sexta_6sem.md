@@ -7,6 +7,7 @@
 
 - d) Avaliação – Registro – Implementação – Comunicação – Aprovação 
 
+---
 
 ## 07 – Durante o processo de elicitação de requisitos, qual técnica é mais indicada para capturar regras de negócio complexas, que envolvam variações e exceções?
 
@@ -14,5 +15,5 @@
 
 > ** b) Matriz de decisão ou arvore de decisão.                   ( X )** 
 
--- c) Observação simples(shadowing).
--- d) Brainstorming informal.
+- c) Observação simples(shadowing).
+- d) Brainstorming informal.
